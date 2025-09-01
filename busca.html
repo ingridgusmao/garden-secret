@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+ <header>
+    <div class="top-bar">
+      <div class="logo">Jardim Secreto</div>
+
+      <div class="icons">
+        <!-- Ícone de busca -->
+        <a href="busca.html" class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+        </a>
+
+        
+
+        <!-- Ícone de login -->
+        <a href="cadastrologin.html" class="icon">
+         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+        </svg>
+        </a>
+      </div>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
+      <a href="main.html">Inicio</a>
+      <a href="qs.html">Quem Somos</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+ <div class="search-box">
+    <h2>Buscar Produtos</h2>
+    <form action="#" method="get">
+      <input type="text" name="q" placeholder="Digite o que procura..." required>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+  <section class="sobre">
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
+      Donec et dictum lorem. Sed scelerisque dapibus sapien, eu egestas nunc 
+      posuere nec. Aliquam erat volutpat.
+    </p>
+  </section>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+ <footer>
+    <p>&copy; 2025 Jardim Secreto. Todos os direitos reservados.</p>
+    <div class="footer-links">
+      <a href="#quem-somos">Quem Somos</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+      <a href="#cadastro">Cadastro</a>
+    </div>
+  </footer>
+  
+</body>
+</html>
